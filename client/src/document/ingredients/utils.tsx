@@ -9,7 +9,7 @@ export function DisplayH2({
 }) {
   return (
     <h2 id={id.toLowerCase()}>
-      <Permalink title={title} titleAsText={titleAsText} id={id} />
+      <Permalink id={id} />
     </h2>
   );
 }
