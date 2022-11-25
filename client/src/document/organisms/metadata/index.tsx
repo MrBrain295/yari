@@ -23,8 +23,22 @@ export function LastModified({ value, locale }) {
   );
 }
 
+function ViewHistoryOnGitHubLink({ doc }: { doc: Doc }) {
+  const { github_url } = doc.source;
+  return (
+    <a
+      href={github_url.replace("/blob/", "/commits/")}
+      title={`View history on GitHub (Opens in a new tab)`}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View the history on <b>GitHub</b>
+    </a>
+  );
+}
+
 export function Authors({ url }) {
-  return <p>by <a href={`${url}/contributors.txt`}>MDN contributors</a></p>;
+  return <p>by <a href={`${url}/contributors.txt`}>MDN contributors</a>. View previous changes on this page <a href={ViewHistoryOnGitHubLink}>here</a>.</p>;
 }
 
 export function Metadata({ doc, locale }) {
