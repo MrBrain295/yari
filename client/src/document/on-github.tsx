@@ -39,7 +39,7 @@ function SourceOnGitHubLink({ doc }: { doc: Doc }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      Source on <b>GitHub</b>
+      View the source on <b>GitHub</b>
     </a>
   );
 }
@@ -53,7 +53,7 @@ function EditOnGitHubLink({ doc }: { doc: Doc }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      Edit on <b>GitHub</b>
+      Edit it on <b>GitHub</b>
     </a>
   );
 }
