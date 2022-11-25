@@ -24,7 +24,7 @@ export function LastModified({ value, locale }) {
 }
 
 export function Authors({ url }) {
-  return <a href={`${url}/contributors.txt`}>by MDN contributors</a>;
+  return <p>by <a href={`${url}/contributors.txt`}>MDN contributors</a></p>;
 }
 
 export function Metadata({ doc, locale }) {
