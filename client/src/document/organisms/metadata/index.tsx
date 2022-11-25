@@ -1,4 +1,5 @@
 import { OnGitHubLink } from "../../on-github";
+import { Doc } from "../../../libs/types/document";
 
 import "./index.scss";
 
