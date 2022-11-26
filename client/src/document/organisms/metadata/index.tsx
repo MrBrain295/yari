@@ -1,5 +1,5 @@
 import { OnGitHubLink } from "../../on-github";
-
+import { renderContributorsTxt } from "../../../../../build"
 import "./index.scss";
 
 export function LastModified({ value, locale }) {
@@ -24,7 +24,7 @@ export function LastModified({ value, locale }) {
 }
 
 export function Authors({ url }) {
-  return <a href={`${url}/contributors.txt`}>by MDN contributors</a>;
+  return <p>by <a href={`${url}/contributors.txt`}>MDN contributors</a></p>;
 }
 
 export function Metadata({ doc, locale }) {
@@ -34,7 +34,7 @@ export function Metadata({ doc, locale }) {
         {doc.isActive && <OnGitHubLink doc={doc} />}
         <p className="last-modified-date">
           <LastModified value={doc.modified} locale={locale} />,{" "}
-          <Authors url={doc.mdn_url} />
+          <Authors url={doc.mdn_url} /> View previous changes on this page <a href=`${githubURL}`>here</a>
         </p>
       </div>
     </aside>
