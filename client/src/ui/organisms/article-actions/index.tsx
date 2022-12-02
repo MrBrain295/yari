@@ -56,6 +56,7 @@ export const ArticleActions = ({
             extraClasses="article-actions-toggle"
             onClickHandler={toggleArticleActionsMenu}
             icon={showArticleActionsMenu ? "cancel" : "ellipses"}
+            name="Article actions"
           >
             <span className="article-actions-dialog-heading">
               Article Actions
